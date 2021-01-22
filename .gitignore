@@ -5,6 +5,7 @@
 # dependencies
 /node_modules
 
+/.idea
 
 # CLIENT
 # ---
@@ -20,6 +21,7 @@
 /client/coverage
 
 # misc
+/client/.idea
 /client/.DS_Store
 /client/.env.local
 /client/.env.development.local
