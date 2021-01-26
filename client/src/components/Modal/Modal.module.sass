@@ -1,0 +1,115 @@
+.wrap
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: none
+    justify-content: center
+    align-items: center
+.active
+    display: flex
+.overlay
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    content: ''
+    display: block
+    background: rgba(0,0,0,0.75)
+    z-index: 0
+.block
+    background: #F4F4F4
+    height: 100%
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    padding: 40px 20px
+    text-align: center
+    position: relative
+    z-index: 1
+    max-height: 640px
+    max-width: 440px
+.close
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 40px
+    background: #EBEBEB
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 12px
+    color: #aaaaaa
+    @media screen and (min-width: 1024px)
+        left: calc(100% + 40px)
+        right: auto
+        background: #FFF500
+        padding: 20px
+        color: #1F190E
+.info
+    display: flex
+    flex-wrap: wrap
+    align-self: flex-end
+    width: 100%
+    max-width: 320px
+    margin: 0 auto
+.form
+    padding-top: 40px
+    display: flex
+    flex-wrap: wrap
+    align-self: flex-start
+    width: 100%
+.title
+    font-size: 20px
+    margin-bottom: 12px
+    @media screen and (min-width: 1024px)
+        font-size: 24px
+.text
+    font-size: 14px
+    opacity: 0.65
+    line-height: 1.25
+    padding-left: 40px
+    padding-right: 40px
+    max-width: 320px
+    margin: 0 auto
+.row
+    display: block
+    width: 100%
+    margin-bottom: 24px
+.label
+    display: block
+    width: 100%
+    font-size: 14px
+    padding-bottom: 8px
+.input
+    appearance: none
+    padding: 12px 40px
+    border: 1px solid #dddddd
+    border-radius: 50px
+    font-family: 'Roboto Slab', serif
+    font-size: 14px
+.action
+    text-align: center
+    display: flex
+    justify-content: center
+    width: 100%
+.button
+    background: #B20000
+    appearance: none
+    border-radius: 50px
+    color: #ffffff
+    font-family: 'Roboto Slab', serif
+    font-size: 16px
+    padding: 12px 40px
+    border: 0
+    display: inline-flex
+    margin: 0 auto
+.comment
+    font-size: 10px
+    opacity: 0.3
+    margin-top: 4px

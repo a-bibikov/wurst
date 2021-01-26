@@ -24,14 +24,14 @@ const Products = (props) => {
 						<div className={s.item_image}>
 							<img src={product2} alt="" className={s.image}/>
 						</div>
-						<div className={s.item_name}>Колбаса холодного копчения</div>
+						<div className={s.item_name}>Вареная колбаса</div>
 						<div className={s.item_price}>от 730 руб. / кг</div>
 					</div>
 					<div className={s.item}>
 						<div className={s.item_image}>
 							<img src={product3} alt="" className={s.image}/>
 						</div>
-						<div className={s.item_name}>Колбаса холодного копчения</div>
+						<div className={s.item_name}>Колбаса горячего копчения</div>
 						<div className={s.item_price}>от 730 руб. / кг</div>
 					</div>
 				</div>

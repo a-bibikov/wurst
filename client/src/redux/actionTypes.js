@@ -1,0 +1,4 @@
+export const APP = {
+	MODAL_SHOW: 'MODAL_SHOW',
+	MODAL_HIDE: 'MODAL_HIDE',
+}

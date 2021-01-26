@@ -46,7 +46,7 @@ const Footer = (props) => {
 						<div className={s.email_link}>info@kolbasa-nsk.ru</div>
 					</div>
 					<div className={s.action}>
-						<div className={s.button}>Написать сообщение</div>
+						<div className={s.button} onClick={props.modalShow}>Запросить прайс</div>
 					</div>
 				</div>
 			</div>

@@ -3,6 +3,8 @@ import s from './Welcome.module.sass'
 import Header from "../Header/Header";
 
 const Welcome = (props) => {
+	console.log(props)
+
 	return (
 		<div className={s.wrap}>
 			<Header />
@@ -12,7 +14,7 @@ const Welcome = (props) => {
 					<div className={s.title}>Колбасные изделия европейского качества</div>
 					<div className={s.subtitle}>крупным и мелким оптом</div>
 					<div className={s.action}>
-						<div className={s.button}>Запросить прайс</div>
+						<div className={s.button} onClick={props.modalShow}>Запросить прайс</div>
 					</div>
 				</div>
 			</div>
