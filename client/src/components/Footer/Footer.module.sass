@@ -1,0 +1,98 @@
+.wrap
+    background: #F4F4F4
+    padding: 80px 20px
+    width: 100%
+.section
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    text-align: center
+    justify-content: center
+    @media screen and (min-width: 1024px)
+        text-align: left
+        justify-content: flex-start
+        padding-left: 40px
+        padding-right: 40px
+    @media screen and (min-width: 1680px)
+        justify-content: space-between
+        width: 1400px
+        padding: 0
+        margin: 0 auto
+.logo_wrap
+    @media screen and (min-width: 1024px)
+        width: 50%
+    @media screen and (min-width: 1280px)
+        width: calc(100% / 3)
+.logo
+    margin-bottom: 60px
+    @media screen and (min-width: 1024px)
+        display: flex
+        align-items: center
+
+.icon
+    width: 58px
+    display: inline-block
+    margin-bottom: 12px
+    @media screen and (min-width: 1024px)
+        margin-right: 24px
+.name
+    font-size: 16px
+    font-weight: 800
+    margin-bottom: 4px
+.description
+    font-size: 10px
+    line-height: 1.15
+    opacity: 0.8
+.menu
+    margin-bottom: 80px
+    width: 100%
+    @media screen and (min-width: 1024px)
+        width: 50%
+    @media screen and (min-width: 1280px)
+        width: calc(100% / 4)
+.menu_block_title
+    font-size: 16px
+    opacity: 0.3
+    text-transform: uppercase
+    margin-bottom: 16px
+.menu_block_item
+    &:not(:last-child)
+        margin-bottom: 20px
+.info
+    @media screen and (min-width: 1024px)
+        margin-left: 50%
+    @media screen and (min-width: 1280px)
+        width: calc(100% / 3)
+        margin-left: 0
+.phones
+    margin-bottom: 40px
+.phone
+    font-size: 28px
+    font-weight: 700
+    margin-bottom: 16px
+.altphone
+    font-size: 20px
+    opacity: 0.5
+.adr
+    font-size: 12px
+    line-height: 18px
+    margin-bottom: 16px
+.email
+    margin-bottom: 24px
+.email_link
+    color: #B20000
+    border-bottom: 1px solid
+    display: inline
+.action
+    margin-top: 80px
+.button
+    padding: 12px 28px
+    background: #B20000
+    color: #ffffff
+    font-size: 16px
+    display: inline-flex
+    text-align: center
+    justify-content: center
+    align-items: center
+    border-radius: 50px
