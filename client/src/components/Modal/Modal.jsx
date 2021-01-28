@@ -23,7 +23,7 @@ const Modal = (props) => {
 					</div>
 					<div className={s.row}>
 						<label htmlFor="" className={s.label}>Контактный телефон:</label>
-						<input type="text" className={s.input}/>
+						<input type="tel" className={s.input}/>
 						<div className={s.comment}>Для связи с вами</div>
 					</div>
 					<div className={s.action}>

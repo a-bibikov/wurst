@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Welcome.module.sass'
-import Header from "../Header/Header";
+import warranty from '../../assets/icons/warranty.svg'
+import Header from "../Header/Header"
 
 const Welcome = (props) => {
 	console.log(props)
@@ -15,6 +16,11 @@ const Welcome = (props) => {
 					<div className={s.subtitle}>крупным и мелким оптом</div>
 					<div className={s.action}>
 						<div className={s.button} onClick={props.modalShow}>Запросить прайс</div>
+					</div>
+				</div>
+				<div className={s.icons}>
+					<div className={s.icon}>
+						<img src={warranty} alt="" className="image"/>
 					</div>
 				</div>
 			</div>

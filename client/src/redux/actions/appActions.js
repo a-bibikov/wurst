@@ -10,3 +10,19 @@ export function modal_hide () {
 		type: APP.MODAL_HIDE,
 	}
 }
+export function gallery_show (img) {
+	return {
+		type: APP.GALLERY_SHOW,
+		payload: {
+			img
+		}
+	}
+}
+export function gallery_hide (img) {
+	return {
+		type: APP.GALLERY_HIDE,
+		payload: {
+			img
+		}
+	}
+}

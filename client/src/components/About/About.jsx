@@ -1,5 +1,7 @@
 import React from 'react'
 import s from './About.module.sass'
+import icon from '../../assets/images/sert/icon.jpg'
+import icon2 from '../../assets/images/sert/icon2.jpg'
 import client1 from '../../assets/images/client1.jpg'
 import client2 from '../../assets/images/client2.jpg'
 import trigger1 from '../../assets/icons/trigger1.svg'
@@ -23,6 +25,14 @@ const About = (props) => {
 						</div>
 						<div className={s.triggers_title}>Полное соответствие стандартам Халяль, ГОСТ и ТР ТС</div>
 						<div className={s.triggers_text}>Предоставим все необходимые сертификаты и документы.</div>
+						<div className={s.images}>
+							<div className={s.images_item} onClick={props.galleryShow}>
+								<img src={icon} className={s.image} alt="" />
+							</div>
+							<div className={s.images_item} onClick={props.galleryShow}>
+								<img src={icon2} className={s.image} alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './Footer.module.sass'
-import Logo from "../UI/Logo/Logo";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.svg"
 
 const Footer = (props) => {
 	return (
@@ -36,7 +35,7 @@ const Footer = (props) => {
 				<div className={s.info}>
 					<div className={s.phones}>
 						<div className={s.phone}>+7 (495) 988-08-60</div>
-						<div className={s.altphone}>+7(951)001-20-29</div>
+						<div className={s.altphone}>+7 (951) 001-20-29</div>
 					</div>
 					<div className={s.adr}>
 						г. Новосибирск,

@@ -1,0 +1,54 @@
+.wrap
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: none
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+.active
+    display: flex
+.body
+    max-height: 90vh
+    display: inline-block
+    background: #ffffff
+    z-index: 1
+    max-width: 80%
+    @media screen and (min-width: 1280px)
+        max-height: 80vh
+.image
+    max-height: 90vh
+    max-width: 100%
+    @media screen and (min-width: 1280px)
+        max-height: 80vh
+.close
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    font-size: 12px
+    background: #dddddd
+    z-index: 10
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    padding: 16px
+    justify-content: center
+    align-items: center
+    @media screen and (min-width: 768px)
+        top: 20px
+        right: 20px
+        width: auto
+        display: inline-flex
+        left: auto
+        padding: 16px 24px
+        background: #FFF500
+.overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,0.7)

@@ -2,7 +2,9 @@ import {APP} from "../actionTypes"
 
 const initialState = {
 	app: {
-		modal: false
+		modal: false,
+		gallery: false,
+		gallery_link: null
 	}
 }
 
@@ -22,6 +24,22 @@ const accountReducer = (state = initialState, action) => {
 				app: {
 					...state.app,
 					modal: false
+				}
+			}
+		case APP.GALLERY_SHOW:
+			return {
+				...state,
+				app: {
+					...state.app,
+					gallery: true
+				}
+			}
+		case APP.GALLERY_HIDE:
+			return {
+				...state,
+				app: {
+					...state.app,
+					gallery: false
 				}
 			}
 		default:
