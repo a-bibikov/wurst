@@ -1,8 +1,22 @@
 const express = require('express')
 const path = require('path')
 const config = require('config')
+const proxy = require('express-http-proxy')
+const cors = require('cors')
+const keys = require('./keys')
+const appRoutes = require('./routes/app.routes')
 
 const app = express()
+
+app.use(keys.BASE_URL, proxy(keys.BASE_URL));
+
+app.use(express.json({extended: true}))
+app.use(cors({
+	origin: keys.BASE_URL,
+	credentials: true
+}))
+
+app.use('/api/app', appRoutes)
 
 if(process.env.NODE_ENV === 'production') {
 	app.use('/', express.static(path.join(__dirname, 'client', 'build')))

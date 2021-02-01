@@ -1,4 +1,5 @@
 import {APP} from "../actionTypes";
+import {appAPI} from "../../api/api";
 
 export function modal_show () {
 	return {
@@ -25,4 +26,19 @@ export function gallery_hide (img) {
 			img
 		}
 	}
+}
+
+export function send_order () {
+	console.log('new order')
+	return {
+		type: APP.MODAL_HIDE
+	}
+}
+export const sendOrder = (message) => (dispatch) => {
+	console.log(message)
+	appAPI.sendOrder(message)
+	.then(response => {
+		console.log(response)
+		dispatch(send_order())
+	})
 }

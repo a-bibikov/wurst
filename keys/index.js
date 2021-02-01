@@ -10,6 +10,7 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
 	COOKIE_SECRET_KEY: 'my secret value',
+	SENDGRID_API_KEY: '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',
 	COOKIE_MAX_AGE: 7200000,
 	BASE_URL: baseURL,
 }

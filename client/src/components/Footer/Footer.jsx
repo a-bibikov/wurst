@@ -34,8 +34,7 @@ const Footer = (props) => {
 				</div>
 				<div className={s.info}>
 					<div className={s.phones}>
-						<div className={s.phone}>+7 (495) 988-08-60</div>
-						<div className={s.altphone}>+7 (951) 001-20-29</div>
+						<a href={"tel:+7(913)901-47-57"} className={s.phone}>+7 (913) 901-47-57</a>
 					</div>
 					<div className={s.adr}>
 						г. Новосибирск,

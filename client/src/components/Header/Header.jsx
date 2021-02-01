@@ -16,7 +16,7 @@ const Header = (props) => {
 					<Address/>
 				</div>
 				<div className={s.phone}>
-					<div className={s.phone_link}>+7 (495) 988-08-60</div>
+					<a href={"tel:+7(913)901-47-57"} className={s.phone_link}>+7 (913) 901-47-57</a>
 					{/*<div className={s.phone_action}>Закзать звонок</div>*/}
 				</div>
 				<div className={s.menu}>

@@ -1,7 +1,15 @@
 import React from 'react'
 import s from './Modal.module.sass'
+import {name, phone} from "../../utils/validators"
+import { Field, reduxForm } from 'redux-form'
+import Input from "../redux-form/Input";
+import {connect} from "react-redux";
+import {sendOrder} from "../../redux/actions/appActions";
+import normalizePhone from "../../utils/normalizePhone";
 
 const Modal = (props) => {
+	console.log(props)
+
 	const onCloseHandler = () => {
 		props.modal_hide()
 	}
@@ -15,21 +23,17 @@ const Modal = (props) => {
 					<div className={s.title}>Запрос коммерческого предложения</div>
 					<div className={s.text}>Заполните заявку, мы отправим вам прайс-лист и коммерческое предложение</div>
 				</div>
-				<div className={s.form}>
+				<form className={s.form} onSubmit={props.handleSubmit}>
 					<div className={s.row}>
-						<label htmlFor="" className={s.label}>Ваше имя:</label>
-						<input type="text" className={s.input}/>
-						<div className={s.comment}>Как к вам обращаться</div>
+						<Field name="name" id="name" component={Input} type="text" placeholder="Например, Елена" validate={[name]} label={"Ваше имя:"} />
 					</div>
 					<div className={s.row}>
-						<label htmlFor="" className={s.label}>Контактный телефон:</label>
-						<input type="tel" className={s.input}/>
-						<div className={s.comment}>Для связи с вами</div>
+						<Field name="phone" id="phone" component={Input} type="text" placeholder="* (***) *** ** **" validate={[phone]} label={"Контактный телефон:"} />
 					</div>
 					<div className={s.action}>
-						<button className={s.button}>Отправить</button>
+						<button type="submit" className={s.button}>Отправить</button>
 					</div>
-				</div>
+				</form>
 				<div className={s.close} onClick={onCloseHandler}>Закрыть</div>
 			</div>
 			<div className={s.overlay} onClick={onCloseHandler}></div>
@@ -37,4 +41,11 @@ const Modal = (props) => {
 	)
 }
 
-export default Modal
+const onSubmit = (values, dispatch) => {
+	dispatch(sendOrder(values));
+}
+
+export default connect()(reduxForm({
+	form: 'modalForm', // a unique identifier for this form
+	onSubmit
+})(Modal))

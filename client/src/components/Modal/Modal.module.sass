@@ -31,8 +31,9 @@
     text-align: center
     position: relative
     z-index: 1
-    max-height: 640px
     max-width: 440px
+    @media screen and (min-width: 1024px)
+        max-height: 640px
 .close
     position: absolute
     top: 0
@@ -81,19 +82,7 @@
     display: block
     width: 100%
     margin-bottom: 24px
-.label
-    display: block
-    width: 100%
-    font-size: 14px
-    padding-bottom: 8px
-.input
-    appearance: none
-    padding: 12px 40px
-    border: 1px solid #dddddd
-    border-radius: 50px
-    font-family: 'Roboto Slab', serif
-    font-size: 14px
-    text-align: center
+
 .action
     text-align: center
     display: flex
@@ -110,7 +99,3 @@
     border: 0
     display: inline-flex
     margin: 0 auto
-.comment
-    font-size: 10px
-    opacity: 0.3
-    margin-top: 4px

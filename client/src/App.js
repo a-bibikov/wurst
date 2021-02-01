@@ -7,7 +7,6 @@ import Cta from "./components/Cta/Cta"
 import Products from "./components/Products/Products"
 import Footer from "./components/Footer/Footer"
 import Bottom from "./components/Bottom/Bottom"
-import ModalContainer from "./containers/ModalContainer"
 import Gallery from "./components/Galllery/Gallery";
 import Modal from "./components/Modal/Modal";
 
