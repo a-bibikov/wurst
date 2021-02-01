@@ -1,11 +1,11 @@
-let baseURL = 'http://http://194.67.116.213/'
+let baseURL = 'http://xn--80ab0aeodhol1g.xn--p1ai/'
 
 if(process.env.NODE_ENV === 'production') {
 	console.log(process.env.NODE_ENV)
-	baseURL = 'http://http://194.67.116.213/'
+	baseURL = 'http://xn--80ab0aeodhol1g.xn--p1ai/'
 } else if(process.env.NODE_ENV === 'development') {
 	console.log(process.env.NODE_ENV)
-	baseURL = 'http://192.168.1.4:3000'
+	baseURL = 'http://localhost:3000'
 }
 
 module.exports = {
