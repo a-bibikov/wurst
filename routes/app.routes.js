@@ -16,7 +16,7 @@ router.post('/', cors(corsOptions), async (req, res) => {
 		console.log(req.body)
 
 		const email = {
-			to: 'info@abibikov.com', // Change to your recipient
+			to: 'leyashapki@yandex.ru', // Change to your recipient
 			from: 'leyashapki@yandex.ru', // Change to your verified sender
 			subject: 'Колбасы Опт - заявка с сайта колбасыопт.рф',
 			text: `Имя клиента: ${req.body.name}\n Телефон клиента: ${req.body.phone}`,
@@ -27,6 +27,7 @@ router.post('/', cors(corsOptions), async (req, res) => {
 				<hr/>
 			`
 		}
+
 		sgMail
 			.send(email)
 			.then(() => {

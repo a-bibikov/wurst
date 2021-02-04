@@ -2,10 +2,9 @@ import React from 'react'
 import s from './Modal.module.sass'
 import {name, phone} from "../../utils/validators"
 import { Field, reduxForm } from 'redux-form'
-import Input from "../redux-form/Input";
-import {connect} from "react-redux";
-import {sendOrder} from "../../redux/actions/appActions";
-import normalizePhone from "../../utils/normalizePhone";
+import Input from "../redux-form/Input"
+import {connect} from "react-redux"
+import {sendOrder} from "../../redux/actions/appActions"
 
 const Modal = (props) => {
 	console.log(props)

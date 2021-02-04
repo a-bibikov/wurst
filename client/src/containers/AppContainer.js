@@ -1,7 +1,7 @@
 import React from 'react'
 import {compose} from "redux"
 import {connect} from "react-redux"
-import {gallery_hide, gallery_show, modal_hide, modal_show} from "../redux/actions/appActions";
+import {gallery_hide, gallery_show, modal_hide, modal_show, success_hide} from "../redux/actions/appActions";
 import App from "../App";
 
 class AppContainer extends React.Component {
@@ -32,6 +32,7 @@ export default compose(
 		modal_show,
 		gallery_show,
 		modal_hide,
-		gallery_hide
+		gallery_hide,
+		success_hide
 	}),
 )(AppContainer)

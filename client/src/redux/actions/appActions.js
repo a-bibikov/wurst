@@ -27,6 +27,16 @@ export function gallery_hide (img) {
 		}
 	}
 }
+export function success_show () {
+	return {
+		type: APP.SUCCESS_SHOW,
+	}
+}
+export function success_hide () {
+	return {
+		type: APP.SUCCESS_HIDE,
+	}
+}
 
 export function send_order () {
 	console.log('new order')
@@ -40,5 +50,6 @@ export const sendOrder = (message) => (dispatch) => {
 	.then(response => {
 		console.log(response)
 		dispatch(send_order())
+		dispatch(success_show())
 	})
 }

@@ -3,6 +3,7 @@ import {APP} from "../actionTypes"
 const initialState = {
 	app: {
 		modal: false,
+		order_send: false,
 		gallery: false,
 		gallery_link: null
 	}
@@ -40,6 +41,22 @@ const accountReducer = (state = initialState, action) => {
 				app: {
 					...state.app,
 					gallery: false
+				}
+			}
+		case APP.SUCCESS_SHOW:
+			return {
+				...state,
+				app: {
+					...state.app,
+					order_send: true
+				}
+			}
+		case APP.SUCCESS_HIDE:
+			return {
+				...state,
+				app: {
+					...state.app,
+					order_send: false
 				}
 			}
 		default:
