@@ -10,7 +10,7 @@ const Address = (props) => {
 			</div>
 			<div className={s.content}>
 				<div className={s.city}>г. Новосибирск</div>
-				<div className={s.location}>проспект Просвещения 33, корпус 1, оф. 5Б</div>
+				<div className={s.location}>ул. Дегтярева 23</div>
 			</div>
 		</div>
 	)

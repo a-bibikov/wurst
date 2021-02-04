@@ -38,7 +38,7 @@ const Footer = (props) => {
 					</div>
 					<div className={s.adr}>
 						г. Новосибирск,
-						проспект Просвещения 33, корпус 1, оф. 5Б
+						ул. Дегтярева 23
 					</div>
 					<div className={s.email}>
 						<div className={s.email_link}>info@kolbasa-nsk.ru</div>
