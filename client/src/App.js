@@ -16,7 +16,7 @@ function App(props) {
         <div className="App">
             <Welcome modalShow={props.modal_show}/>
             <About galleryShow={props.gallery_show}/>
-            <Cta/>
+            <Cta app={props.app}/>
             <Products/>
             <Footer modalShow={props.modal_show}/>
             <Bottom/>

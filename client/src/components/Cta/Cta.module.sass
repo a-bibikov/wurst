@@ -74,7 +74,7 @@
         padding: 0
         display: flex
         flex-wrap: wrap
-        align-items: flex-end
+        align-items: flex-start
         justify-content: flex-start
 .form_col
     margin-bottom: 40px
@@ -82,30 +82,14 @@
         width: calc(100% / 3)
         margin-bottom: 0
         padding-right: 16px
-.label
-    color: #ffffff
-    font-size: 14px
-    display: inline-block
-    padding-bottom: 8px
-    @media screen and (min-width: 1024px)
-        padding-left: 24px
-.input
-    display: block
-    width: 100%
-    padding: 12px 20px
-    text-align: center
-    box-sizing: border-box
-    background: transparent
-    border: 1px solid #ffffff
-    border-radius: 50px
-    color: #ffffff
-    font-family: 'Roboto Slab', serif
-    @media screen and (min-width: 1024px)
-        text-align: left
-        padding-left: 24px
+        position: relative
+
 .action
     @media screen and (min-width: 1024px)
         width: calc(100% / 3)
+.form_action
+    @media screen and (min-width: 1024px)
+        margin-top: 24px
 .button
     border: 0
     background: #FFF500

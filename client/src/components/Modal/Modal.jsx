@@ -7,8 +7,6 @@ import {connect} from "react-redux"
 import {sendOrder} from "../../redux/actions/appActions"
 
 const Modal = (props) => {
-	console.log(props)
-
 	const onCloseHandler = () => {
 		props.modal_hide()
 	}
