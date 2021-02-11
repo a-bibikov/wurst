@@ -23,7 +23,13 @@ const Footer = (props) => {
 						<div className={s.menu_block_list}>
 							<div className={s.menu_block_list}>
 								<div className={s.menu_block_item}>
-									<div className={s.menu_block_link}>Реквизиты</div>
+									<div className={s.menu_block_link}>ИП Толстикова С. А.</div>
+								</div>
+								<div className={s.menu_block_item}>
+									<div className={s.menu_block_link}>ОГРНИП 319547600008586</div>
+								</div>
+								<div className={s.menu_block_item}>
+									<div className={s.menu_block_link}>ИНН 540537972440</div>
 								</div>
 							</div>
 						</div>
