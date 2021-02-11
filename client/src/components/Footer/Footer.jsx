@@ -12,7 +12,7 @@ const Footer = (props) => {
 							<img src={logo} alt="" className={s.image}/>
 						</div>
 						<div className={s.content}>
-							<div className={s.name}>Колбаса плюс</div>
+							<div className={s.name}>Кавказские продукты</div>
 							<div className={s.description}>Оптовые поставки колбасных изделий</div>
 						</div>
 					</div>
@@ -22,9 +22,6 @@ const Footer = (props) => {
 						<div className={s.menu_block_title}>О компании</div>
 						<div className={s.menu_block_list}>
 							<div className={s.menu_block_list}>
-								<div className={s.menu_block_item}>
-									<div className={s.menu_block_link}>Контакты</div>
-								</div>
 								<div className={s.menu_block_item}>
 									<div className={s.menu_block_link}>Реквизиты</div>
 								</div>

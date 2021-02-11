@@ -16,7 +16,7 @@ const About = (props) => {
 						<div className={s.icon}>
 							<img src={trigger1} alt="" className={s.icon_image}/>
 						</div>
-						<div className={s.triggers_title}>Минимальный оптовый заказ от 45 кг</div>
+						<div className={s.triggers_title}>Минимальный оптовый заказ от 25 кг</div>
 						<div className={s.triggers_text}>Оптовые цены мы предоставляем при заказе от 25 кг. При заказе от 150 кг действует скидка на крупный опт. Для приобретения в розницу, обращайтесь по адресам розничных торговых точек.</div>
 					</div>
 					<div className={s.triggers_item}>
