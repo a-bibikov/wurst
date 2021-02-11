@@ -5,7 +5,7 @@ const Bottom = (props) => {
 	return (
 		<div className={s.section}>
 			<div className={s.wrap}>
-				<div className={s.copyright}>ООО «Колбаса плюс» © 2017 – 2020</div>
+				<div className={s.copyright}>ИП Толстикова С. А. © 2017 – 2020</div>
 				<div className={s.privacy}>
 					<div className={s.privacy_link}>Политика конфиденциальности</div>
 				</div>
